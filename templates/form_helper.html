@@ -1,7 +1,7 @@
 {% macro displayField(fieldName, placeholderValue) %}
-
 <div>
-    {{fieldName(class_='form-control', placeholder = 'placeholderValue', **kwargs)}}
+    {{ fieldName(class_='form-control', 
+        placeholder = 'placeholderValue', **kwargs) }}
     
     <!-- Error Messages -->
     <ul>
@@ -10,5 +10,4 @@
         {% endfor %}
     </ul>
 </div>
-
 {% endmacro %}
